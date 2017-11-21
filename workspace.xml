@@ -1,0 +1,33 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" id="workspaceBlocks" style="display:none">
+  <variables></variables>
+  <block type="base" id="?WukoAL-?6bI0J,wmU2(" x="13" y="37">
+    <field name="NAME">My Extension</field>
+    <field name="HELP">Hello!</field>
+    <statement name="DEFINITIONS">
+      <block type="block_definition" id="l/^,L4h^ieI/S`~_S*S^">
+        <field name="BLOCK">myBlock</field>
+        <field name="NAME">0</field>
+        <statement name="CODE">
+          <block type="text_print" id="qs`;#WK-MTB_9_wnF_*Y">
+            <value name="TEXT">
+              <shadow type="text" id="00uVqJBc.MI;]OaP_/;w">
+                <field name="TEXT">Hello!</field>
+              </shadow>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <statement name="DESCRIBE">
+      <block type="block_describe" id="gE)CMavD{T%P[,aK.g+F">
+        <field name="NAME">myBlock</field>
+        <field name="TYPE"> </field>
+        <value name="CONTENT">
+          <block type="content_text" id="zk8]uS7a=CyGb5XK3;eH">
+            <field name="TEXT">hello</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>
