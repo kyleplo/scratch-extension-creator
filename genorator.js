@@ -134,21 +134,7 @@ Blockly.JavaScript['base'] = function(block) {
   var statements_menus = Blockly.JavaScript.statementToCode(block, 'MENUS');
   var text_help = block.getFieldValue('HELP');
   // TODO: Assemble JavaScript into code variable.
-  var code = "
-    ext._shutdown = function() {};
-    ext._getStatus = function() {
-        return {status: 2, msg: 'Ready'};
-    };
-  "+statements_definitions+"
-    var descriptor = {
-        blocks: ["+statements_describe+"
-        ],
-      menus: {"+statements_menus+"},
-      url: 'https://kyleplo.github.io/scratch-extension-creator/help#'" + text_help + "
-    };
-
-    // Register the extension
-    ScratchExtensions.register('"+text_name+"', descriptor, ext);";
+  var code = "ext._shutdown = function() {};ext._getStatus = function() {    return {status: 2, msg: 'Ready'};};"+statements_definitions+"  var descriptor = {   blocks: ["+statements_describe+"],menus: {"+statements_menus+"},url: 'https://kyleplo.github.io/scratch-extension-creator/help#'" + text_help + "};ScratchExtensions.register('"+text_name+"', descriptor, ext);";
   return code;
 };
 
