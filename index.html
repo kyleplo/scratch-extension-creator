@@ -3,7 +3,12 @@
 <title>Scratch Extension Creator</title>
 </head>
 <body>
+  <h1>Scratch Extension Creator</h1>
+  <p>First, build your extension:</p>
 <div id="blocklyDiv" style="height: 600px; width: 600px;"></div>
+  <p>Next, here is your code:</p>
+  <button onclick="var code = Blockly.JavaScript.workspaceToCode(workspace);document.getElementsByTagName('code')[0].innerHTML = code">Get Code!</button>
+  <code></code>
 <xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
   <category name="Logic" colour="#5C81A6">
     <block type="controls_if"></block>
@@ -475,6 +480,6 @@
 <script src="./msg/js/en.js"></script>
   <script src="./definitions.js"></script>
   <script src="./workspace.js"></script>
-<!--  Add when complete <script src="./genorator.js"></script> -->
+<script src="./genorator.js"></script>
 </body>
 </html>
